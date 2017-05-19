@@ -147,4 +147,46 @@ footer a{
   .lang{
     width: 20%;
   }
+    #name{
+        width: 250px;
+    }
+
+}
+@media screen and (max-width: 375px){
+    h1{
+        font-size: 18px;
+        width:50%;
+        padding: 15px 0;
+    }
+    .logo{
+        width:100px;
+    }
+    .lang{
+        width: 15%;
+    }
+    #name{
+        width: 250px;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .lang button{
+        margin: 20px 0 0 5px;
+        width: 24px;
+        height: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        outline:none;
+    }
+}
+@media screen and (max-width: 320px){
+    h1{
+        font-size: 18px;
+        width:40%;
+        padding: 15px 0;
+    }
+    .lang{
+        width: 20%;
+    }
 }
