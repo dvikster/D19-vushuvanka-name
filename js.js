@@ -144,9 +144,10 @@ function getVushAlfab(){
     var yourVushName='';
 
     console.log(yourNameValue);
-    for(var key in vushAlfabet){
 
-            for( var i=0; i<yourNameValue.length; i++){
+     for( var i=0; i<yourNameValue.length; i++){
+
+         for(var key in vushAlfabet){
                 if( yourNameValue[i] == vushAlfabet[key].id ){
 
                     console.log(vushAlfabet[key].id);
@@ -170,7 +171,7 @@ function translateToEN() {
     document.querySelector('.poet').innerHTML = ' Put on embroidery' + '<br>' + 'Let the world see the Ukrainian -' + '<br>' +
         'Young, brave, stalwart, a union for a hundred thousand years';
     document.querySelector('h1').innerHTML = 'Choose your shirt';
-    document.querySelector('.enter-your-name').innerHTML = 'Enter your name'
+    document.querySelector('.enter-your-name').innerHTML = 'Enter your name' + '<br>' +'(ukrainian)'
 }
 function translateToUA() {
     document.querySelector('.poet').innerHTML = 'Одягнімо вишиванки, друже,' + '<br>' +
@@ -178,5 +179,5 @@ function translateToUA() {
         'Молодих, відважних, дужих,' +'<br>' + ' У єднанні на сто тисяч літ.';
 
     document.querySelector('h1').innerHTML = 'Обери свою вишиванку';
-    document.querySelector('.enter-your-name').innerHTML = 'Введіть своє ім\'я'
+    document.querySelector('.enter-your-name').innerHTML = 'Введіть своє ім\'я ' + '<br>' +'(українською)'
 }
