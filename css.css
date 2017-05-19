@@ -7,14 +7,14 @@ html{
   height: 100%;
 }
 body {
-  background-image: url("img/back.jpg");
+  background: url("img/back.jpg") no-repeat;
   background-size: cover;
   height: 100%;
-  padding:20px;
+  padding: 20px;
 }
 
 .wrapper{
-  height: 100%;
+  min-height: 100%;
   max-width: 1200px;
   margin: auto;
   -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
@@ -23,7 +23,7 @@ body {
   background-color: rgba(255,255,255,0.7);
   border-radius: 5px;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
 }
 
 header{
@@ -32,7 +32,12 @@ header{
   background: #2752ae;
   height: 100px;
 }
-
+#out{
+  min-height: 100px;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
 .row {
   width: 94%;
   margin: auto;
@@ -69,20 +74,34 @@ h1{
   margin: 44px 0 0 10px;
 }
 .col {
-  width: auto;
-  height: auto;
-  border: 1px solid black;
-  margin: 10px 50px 10px 50px;
 }
 .poet {
   width: 273px;
-  margin: 50px auto;
+  margin: 50px auto 20px;
   font-size: 20px;
+}
+.enter-your-name{
+  width: 273px;
+  margin: 20px auto;
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+#name{
+  border: 1px solid #86d8ff;
+  border-radius: 5px;
+  height: 40px;
+  width: 300px;
+  margin: 20px auto 50px;
+  display: block;
+  outline: none;
+  font-size: 26px;
+  padding: 0 10px;
 }
 .adv {
   width: 100%;
   height: auto;
-  border: 1px solid red;
+  border: 1px solid #fff470;
   margin: auto;
   padding: 20px;
   position: absolute;
