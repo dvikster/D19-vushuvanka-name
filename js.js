@@ -161,3 +161,17 @@ function getVushAlfab(){
         document.getElementById('out').innerHTML = yourVushName;
 
 }
+
+
+
+document.querySelector('.ENlang').onclick = translateToEN;
+document.querySelector('.UAlang').onclick = translateToUA;
+function translateToEN() {
+    document.querySelector('.poet').innerHTML = ' Put on embroidery' + '<br>' + 'Let the world see the Ukrainian -' + '<br>' +
+        'Young, brave, stalwart, a union for a hundred thousand years'
+}
+function translateToUA() {
+    document.querySelector('.poet').innerHTML = 'Одягнімо вишиванки, друже,' + '<br>' +
+        'Хай побачить українців світ —' + '<br>' +
+        'Молодих, відважних, дужих, У єднанні на сто тисяч літ.'
+}
