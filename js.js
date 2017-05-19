@@ -1,20 +1,24 @@
 var vushAlfabet=[
     {
-        'id': 'A',
-        'imgSrc': 'a'
+        'id': 'а',
+        'imgSrc': 'img/a.gif'
     },
     {
-        'id': 'B',
-        'imgSrc': 'b'
+        'id': 'б',
+        'imgSrc': 'img/b.gif'
     },
     {
-        'id': 'C',
-        'imgSrc': 'c'
+        'id': 'в',
+        'imgSrc': 'img/b2.gif'
     },
     {
-        'id': 'D',
-        'imgSrc': 'd'
-     }
+        'id': 'г',
+        'imgSrc': 'img/c.gif'
+     },
+    {
+        'id': 'ґ',
+        'imgSrc': 'img/e.gif'
+    },
 ];
 
 
@@ -24,7 +28,7 @@ var yourVushLetter='';
 yourName.addEventListener('keyup', getVushAlfab);
 
 function getVushAlfab(){
-    yourNameValue = this.value.split('');
+    yourNameValue = this.value.toLowerCase().split('');
     var yourVushName='';
 
     console.log(yourNameValue);
@@ -34,7 +38,7 @@ function getVushAlfab(){
                 if( yourNameValue[i] == vushAlfabet[key].id ){
 
                     console.log(vushAlfabet[key].id);
-                    yourVushLetter = vushAlfabet[key].imgSrc;
+                    yourVushLetter = '<img src="'+vushAlfabet[key].imgSrc+'" alt="'+ vushAlfabet[key].id+'">';
                     yourVushName +=yourVushLetter;
 
                     console.log(yourVushLetter);
