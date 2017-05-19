@@ -168,10 +168,15 @@ document.querySelector('.ENlang').onclick = translateToEN;
 document.querySelector('.UAlang').onclick = translateToUA;
 function translateToEN() {
     document.querySelector('.poet').innerHTML = ' Put on embroidery' + '<br>' + 'Let the world see the Ukrainian -' + '<br>' +
-        'Young, brave, stalwart, a union for a hundred thousand years'
+        'Young, brave, stalwart, a union for a hundred thousand years';
+    document.querySelector('h1').innerHTML = 'Choose your shirt';
+    document.querySelector('.enter-your-name').innerHTML = 'Enter your name'
 }
 function translateToUA() {
     document.querySelector('.poet').innerHTML = 'Одягнімо вишиванки, друже,' + '<br>' +
         'Хай побачить українців світ —' + '<br>' +
-        'Молодих, відважних, дужих, У єднанні на сто тисяч літ.'
+        'Молодих, відважних, дужих,' +'<br>' + ' У єднанні на сто тисяч літ.';
+
+    document.querySelector('h1').innerHTML = 'Обери свою вишиванку';
+    document.querySelector('.enter-your-name').innerHTML = 'Введіть своє ім\'я'
 }
