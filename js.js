@@ -1,21 +1,47 @@
 var vushAlfabet=[
     {
         'id': 'A',
-        'imgSrc': 'images/big_sinica.jpg'
+        'imgSrc': 'a'
     },
     {
-        'id': 'Б',
-        'imgSrc': 'images/chizh.jpeg'
+        'id': 'B',
+        'imgSrc': 'b'
     },
     {
-        'id': 'В',
-        'imgSrc': 'images/galka.jpg',
+        'id': 'C',
+        'imgSrc': 'c'
     },
     {
-        'id': 'Г',
-        'imgSrc': 'images/korostel.jpg',
+        'id': 'D',
+        'imgSrc': 'd'
      }
-]
+];
 
 
-var name = document.getElementById('name');
+var yourName = document.getElementById('name');
+var yourNameValue='';
+var yourVushLetter='';
+yourName.addEventListener('keyup', getVushAlfab);
+
+function getVushAlfab(){
+    yourNameValue = this.value.split('');
+    var yourVushName='';
+
+    console.log(yourNameValue);
+    for(var key in vushAlfabet){
+
+            for( var i=0; i<yourNameValue.length; i++){
+                if( yourNameValue[i] == vushAlfabet[key].id ){
+
+                    console.log(vushAlfabet[key].id);
+                    yourVushLetter = vushAlfabet[key].imgSrc;
+                    yourVushName +=yourVushLetter;
+
+                    console.log(yourVushLetter);
+                }
+            }
+        }
+
+        document.getElementById('out').innerHTML = yourVushName;
+
+}
