@@ -1,21 +1,71 @@
 *{
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
-/*body {
-  width: 100%;
+html{
   height: 100%;
-}*/
-
-
+}
 body {
   background-image: url("img/back.jpg");
   background-size: cover;
+  height: 100%;
+  padding:20px;
 }
+
+.wrapper{
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
+  -webkit-box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 15px 0 rgba(0,0,0,0.75);
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+header{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background: #2752ae;
+  height: 100px;
+}
+
 .row {
-  width: 100%;
-  height: auto;
-  border: 1px solid blue;
-  display: inline-block;
+  width: 94%;
+  margin: auto;
+}
+.row:after{
+  clear: both;
+  content: '';
+  display: block;
+}
+.logo{
+  width:10%;
+  padding-top: 10px;
+  float: left;
+}
+.logo img{
+  width: 100px;
+}
+h1{
+  width: 80%;
+  margin: auto;
+  padding: 30px 0;
+  float: left;
+  text-align: center;
+  color: #fff470;
+  font-family: Verdana, sans-serif;
+}
+.lang{
+  width: 10%;
+  float: left;
+  text-align: right;
+}
+.lang button{
+  margin: 44px 0 0 10px;
 }
 .col {
   width: auto;
@@ -32,16 +82,22 @@ body {
 #box1 {
   width: 50px;
   height: 50px;
-  border: 1px solid black;
-  margin: 2px;
   margin-left: 50px;
   float: left;
 }
 #box2 {
   width: 50px;
   height: 50px;
-  border: 1px solid black;
-  margin: 2px;
   margin-right: 50px;
   float: right;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  /*background: #bea471;*/
+  background: #fff470;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
