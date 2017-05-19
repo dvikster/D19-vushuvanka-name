@@ -73,11 +73,20 @@ h1{
   border: 1px solid black;
   margin: 10px 50px 10px 50px;
 }
+.poet {
+  width: 273px;
+  margin: 50px auto;
+  font-size: 20px;
+}
 .adv {
-  width: auto;
+  width: 100%;
   height: auto;
   border: 1px solid red;
-  margin: 10px 50px 10px 50px;
+  margin: auto;
+  padding: 20px;
+  position: absolute;
+  bottom: 100px;
+  text-align: center;
 }
 #box1 {
   width: 50px;
